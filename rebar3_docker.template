@@ -1,0 +1,23 @@
+{description, "Rebar3 Erlang lib with Docker template"}.
+{variables,
+  [{name, "new_app", "Name of the application"},
+   {desc, "new_app description", "Short description of the app"},
+   {erlang_version, "22.3", "Erlang image tag"},
+   {uid, "1000", "UID (`id -u` in common)"},
+   {gid, "1000", "GID (`id -g` in common)"}
+]}.
+
+{template, "Makefile.tpl", "{{name}}/Makefile"}.
+{template, "Dockerfile.tpl", "{{name}}/Dockerfile"}.
+{template, "docker-compose.yaml.tpl", "{{name}}/docker-compose.yaml"}.
+{template, ".env.tpl", "{{name}}/.env"}.
+{template, ".env.tpl", "{{name}}/.env.example"}.
+{template, ".gitignore.tpl", "{{name}}/.gitignore"}.
+
+{template, "rebar.config.tpl", "{{name}}/rebar.config"}.
+{template, "rebar.config.script.tpl", "{{name}}/rebar.config.script"}.
+
+{template, "config/test.sys.config.tpl", "{{name}}/config/test.sys.config.tpl"}.
+
+
+
