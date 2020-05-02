@@ -58,4 +58,4 @@ coverage:
 
 .PHONY: lint
 lint:
-	$(REBAR) do lint, xref
+	$(REBAR) do lint, xref, dialyzer
