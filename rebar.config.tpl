@@ -1,12 +1,12 @@
 {erl_opts, [debug_info]}.
-{deps, []}.
+{shell, [{apps, [{{name}}]}]}.
 
 {project_plugins, [{rebar3_lint, "~> 0.1"}, coveralls]}.
 
 {profiles,
  [{test,
    [{erl_opts, [debug_info, warnings_as_errors]},
-    {sys_config, ["config/test.sys.config"]},
+    {sys_config, ["config/test.sys.config"]}
    ]}
  ]}.
 
