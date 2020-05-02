@@ -30,6 +30,12 @@ rebar3_docker:
 * Editorconfig integration
 * Automatic sending coverage data to Coveralls
 
+## Requirements
+
+* docker
+* docker-compose
+* make
+
 ## Installation
 
     $ mkdir -p ~/.config/rebar3/templates
@@ -62,6 +68,6 @@ rebar3_docker:
 
 ## Development
 
-    $ git clone https://github.com/bottleneko/rebar3_docker_lib_template docker_lib_template
-    $ ln -s $PWD/docker_lib_template ~/.config/rebar3/templates
+    $ git clone https://github.com/bottleneko/rebar3_docker_lib_template
+    $ ln -s $PWD/rebar3_docker_lib_template ~/.config/rebar3/templates
     $ rebar3 new docker_lib
