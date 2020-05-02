@@ -17,6 +17,8 @@
 {template, "rebar.config.tpl", "{{name}}/rebar.config"}.
 {template, "rebar.config.script.tpl", "{{name}}/rebar.config.script"}.
 
+{template, "elvis.config.tpl", "{{name}}/elvis.config"}.
+
 {template, "config/test.sys.config.tpl", "{{name}}/config/test.sys.config"}.
 
 {template, "src/lib.app.src.tpl", "{{name}}/src/{{name}}.app.src"}.

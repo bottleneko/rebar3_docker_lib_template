@@ -55,3 +55,7 @@ shell:
 .PHONY: coverage
 coverage:
 	$(REBAR) do eunit, ct, cover -v
+
+.PHONY: lint
+lint:
+	$(REBAR) lint
