@@ -23,3 +23,5 @@
 
 {template, "src/lib.app.src.tpl", "{{name}}/src/{{name}}.app.src"}.
 {template, "src/lib.erl.tpl", "{{name}}/src/{{name}}.erl"}.
+
+{template, ".circleci/config.yaml.tpl", "{{name}}/.circleci/config.yaml"}.
