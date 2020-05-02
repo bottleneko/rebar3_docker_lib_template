@@ -25,3 +25,5 @@
 {template, "src/lib.erl.tpl", "{{name}}/src/{{name}}.erl"}.
 
 {template, ".editorconfig.tpl", "{{name}}/.editorconfig"}.
+
+{template, ".circleci/config.yaml.tpl", "{{name}}/.circleci/config.yaml"}.
