@@ -27,6 +27,7 @@ rebar3_docker:
 * Out-of-box workspace in Docker
 * Elvis linting preset
 * CircleCI minimal workflow
+* Editorconfig integration
 * Automatic sending coverage data to Coveralls
 
 ## Installation
@@ -36,7 +37,28 @@ rebar3_docker:
 
 ## Examples
 
+### Generate lib
+
     $ rebar3 new docker_lib name=eraven desc="Sentry Erlang client" erlang_version=22.3 uid=$(id -u) gid=$(id -g)
+    
+### rebar3 shell
+
+    $ make
+
+### Container bash
+
+    $ make workspace
+    
+### Container lifecycle
+
+    $ make workspace-build
+    $ make workspace-up
+    $ make workspace-down
+    
+### Misc
+   
+    $ make lint
+    $ make coverage
 
 ## Development
 
